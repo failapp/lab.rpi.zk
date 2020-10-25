@@ -3,18 +3,24 @@ integracion dispositivos zkteco ..
 
 ### comandos gestion entorno virtual python.. :
 
-´´´
-// crear entono virtual (python 3.6, linux opensuse 15.1)
-$ virtualenv env
+```
 
-// activar entorno virtual python
-$ source env/bin/active
+// instalar entorno virtual (python 3.6, linux opensuse 15.1) ..
+$ pip3 install virtualenv
 
-// desactivar entorno virtual python
-$ deactivate
+$ mkdir app
+$ cd app 
+$ virtualenv venv
+
+// activar entorno virtual python ..
+$ source venv/bin/active
 
 // generar archivo con dependencias:
 $ pip freeze > requirements.txt 
 
-´´´
+// desactivar entorno virtual python ..
+$ deactivate
+
+```
+
 
