@@ -23,4 +23,13 @@ $ deactivate
 
 ```
 
-
+// obtener template facial de usuario ..
+```
+#define CMD_USERFACE_RRQ	 150	 // read request
+#define CMD_USERFACE_WRQ	 151	 // write request
+#define CMD_APPEND_USERFACE  153     // ..
+#define CMD_DELETE_USERFACE	 152     // ..
+//php ..
+define('CMD_USERFACE_RRQ', 16);
+define('CMD_USERFACE_WRQ', 17);
+```
