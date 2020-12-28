@@ -53,3 +53,9 @@ def delete_user():
 
     else:
         return jsonify({}), 204
+
+
+@userdata.route('/api/v1/zk/users/fingerprint/<userId>', methods=['POST'])
+def save_fingerprint_template():
+    #service.save_fingerprint_template(payload)
+    return jsonify({}), 204

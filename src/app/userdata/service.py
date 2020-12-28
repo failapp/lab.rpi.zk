@@ -56,7 +56,6 @@ def fetch_device_user(userId):
         return None
     
 
-
 def store_device_user(payload):
     try:
         zk = ZK(conf.IP_ADDR_DEVICE, port=conf.TCP_PORT_DEVICE, timeout=5, password=0, force_udp=False, ommit_ping=False)
@@ -113,10 +112,6 @@ def store_device_user(payload):
         return None
     
 
-
-
-
-
 def delete_device_user(payload):
     try:
         zk = ZK(conf.IP_ADDR_DEVICE, port=conf.TCP_PORT_DEVICE, timeout=5, password=0, force_udp=False, ommit_ping=False)
@@ -153,4 +148,12 @@ def delete_device_user(payload):
     except Exception as e:
         print ("Process terminate : {}".format(e))
         return None
-    
+
+
+
+def save_fingerprint_template(payload):
+    return None
+
+
+def save_face_template(payload):
+    return None
