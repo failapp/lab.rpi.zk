@@ -59,3 +59,15 @@ def delete_user():
 def save_fingerprint_template():
     #service.save_fingerprint_template(payload)
     return jsonify({}), 204
+
+
+@userdata.route('/api/v1/zk/face/template/users/<userId>', methods=['DELETE'])
+def delete_face_template():
+    #service.delete_face_template(userId)
+    return jsonify({}), 204
+
+
+@userdata.route('/api/v1/zk/fingerprint/users/<userId>', methods=['DELETE'])
+def delete_face_template():
+    #service.delete_fingerprint_template(userId)
+    return jsonify({}), 204

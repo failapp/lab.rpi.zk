@@ -157,3 +157,9 @@ def save_fingerprint_template(payload):
 
 def save_face_template(payload):
     return None
+
+def delete_fingerprint_template(userId):
+    return None
+
+def delete_face_template(userId):
+    return None
